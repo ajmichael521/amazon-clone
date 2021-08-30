@@ -1,0 +1,26 @@
+.app {
+  background-color: rgb(211, 208, 208);
+}
+@media only screen and (max-width: 380px) {
+  .app {
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .app {
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .app {
+    background-color: white;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .app {
+    background-color: white;
+  }
+}

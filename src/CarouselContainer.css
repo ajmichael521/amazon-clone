@@ -1,0 +1,35 @@
+.carousel {
+  height: 300px;
+}
+
+.carousel-inner {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.carousel-indicators > button {
+  display: none;
+}
+
+@media only screen and (max-width: 380px) {
+  .carousel {
+    height: 120px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .carousel {
+    height: 140px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .carousel {
+    height: 140px;
+  }
+}
+
+@media only screen and (min-width: 770px) {
+  .carousel {
+    height: 250px;
+  }
+}

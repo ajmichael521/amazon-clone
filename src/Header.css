@@ -1,0 +1,318 @@
+.header {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 198;
+  display: flex;
+  zoom: 1;
+  min-width: 1000px;
+  background-color: #131921;
+  flex-flow: row nowrap;
+  float: none;
+  width: auto;
+  position: sticky;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 35px !important;
+  background-color: #cd9042;
+  border-radius: 1px;
+  margin-left: 3px;
+}
+
+.header__searchInput {
+  height: 30px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 1px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.subsection {
+  display: none;
+  background-color: #263446;
+  color: rgba(255, 255, 255, 0.699);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+}
+
+.subsection ::-webkit-scrollbar {
+  display: none;
+}
+
+.subsection > .option3 {
+  display: none;
+  margin-left: 0;
+  margin-right: 2px;
+}
+
+.subsection > .option3__location {
+  margin-left: 100px;
+  display: none;
+}
+
+.subsection > .option2__person {
+  margin-left: 60px;
+  padding-left: 10px;
+  display: none;
+}
+
+.subsection > .option1__home {
+  display: none;
+}
+
+.subsection > .option1 {
+  display: none;
+}
+
+.subsection > .option2 {
+  display: none;
+}
+.subsection > .link {
+  display: none;
+}
+
+/*---------iphonex------------*/
+
+@media only screen and (max-width: 380px) {
+  .header {
+    min-width: 100px;
+    overflow: hidden;
+  }
+  .header__search {
+    min-width: 100px;
+    width: 200vw;
+    padding-right: 20px;
+    padding-left: 0;
+    margin-left: 2;
+  }
+  .header__logo {
+    width: 25%;
+    padding-left: 0px;
+    margin-left: 0;
+  }
+  .header__option {
+    display: none;
+  }
+
+  .subsection > .option3 {
+    display: initial;
+  }
+  .subsection > .option3__location {
+    display: initial;
+  }
+  .subsection > .option2__person {
+    display: initial;
+  }
+  .subsection > .option1__home {
+    display: initial;
+  }
+  .subsection > .option1 {
+    display: initial;
+  }
+  .subsection > .option2 {
+    display: initial;
+  }
+  .option1 {
+    text-decoration: none;
+  }
+  .option1__home {
+    text-decoration: none;
+  }
+  .subsection > .link {
+    display: initial;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.699);
+  }
+  .subsection > #login {
+    margin-left: 50px;
+  }
+}
+/*----------iphone6/7/8 plus----------*/
+@media only screen and (max-width: 420px) {
+  .header {
+    min-width: 200px;
+    overflow: hidden;
+  }
+  .header__search {
+    min-width: 200px;
+    width: 300vw;
+    padding-right: 20px;
+    padding-left: 0;
+    margin-left: 2;
+  }
+  .header__option {
+    display: none;
+  }
+  .header__logo {
+    width: 20%;
+    padding-left: 0px;
+    margin-left: 1;
+  }
+  .subsection > .option3 {
+    display: initial;
+  }
+  .subsection > .option3__location {
+    display: initial;
+  }
+  .subsection > .option2__person {
+    display: initial;
+  }
+  .subsection > .option1__home {
+    display: initial;
+  }
+  .subsection > .option1 {
+    display: initial;
+  }
+  .subsection > .option2 {
+    display: initial;
+  }
+  .subsection > .link {
+    display: initial;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.699);
+  }
+  .subsection > #login {
+    margin-left: 50px;
+  }
+}
+
+/*--------IPHONE 12 pro-max-------------*/
+
+@media only screen and (max-width: 430px) {
+  .header {
+    min-width: 200px;
+    overflow: hidden;
+  }
+  .header__option {
+    display: none;
+  }
+  .header__search {
+    min-width: 200px;
+    width: 300vw;
+    padding-right: 20px;
+    padding-left: 0;
+    margin-left: 2;
+  }
+  .subsection > .option3 {
+    display: initial;
+  }
+  .subsection > .option3__location {
+    display: initial;
+  }
+  .subsection > .option2__person {
+    display: initial;
+  }
+  .subsection > .option1__home {
+    display: initial;
+  }
+  .subsection > .option1 {
+    display: initial;
+  }
+  .subsection > .option2 {
+    display: initial;
+  }
+  .subsection > .link {
+    display: initial;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.699);
+  }
+  .subsection > #login {
+    margin-left: 50px;
+  }
+}
+/*-------------ipad-------------*/
+@media only screen and (max-width: 770px) {
+  .header {
+    min-width: 200px;
+    overflow: hidden;
+  }
+  .subsection > .link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.699);
+  }
+}
+@media only screen and (min-width: 770px) {
+  .subsection > .link {
+    display: none;
+  }
+  .subsection > #login {
+    margin-left: 50px;
+  }
+}
+
+/*.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+} */
+
+/*position: relative;
+  top: 0;
+  left: 0;
+  z-index: 198;
+  display: flex;
+  zoom: 1;
+  min-width: 1000px;
+  background-color: #131921;
+  flex-flow: row nowrap;
+  float: none;
+  width: auto;
+  position: sticky;*/
